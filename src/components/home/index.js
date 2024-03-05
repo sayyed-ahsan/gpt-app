@@ -408,7 +408,7 @@ const Home = () => {
           alt=""
         />
         <img
-          className="max-w-[555px] max-h-[1300px] w-full md:w-auto mt-4 md:mt-0 md:ml-4"
+          className="max-w-[555px] max-h-[1300px] w-full md:w-auto "
           src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/3cfYZ62ndd3Fci44OcL9/media/65c36099805e4b8eb539530b.png"
           alt=""
         />
@@ -741,7 +741,7 @@ const Home = () => {
       <div className="flex flex-wrap justify-center max-w-[1160px] mx-auto my-[50px]">
         <div className="w-full sm:w-[545px] px-4 sm:px-0 mx-auto mb-8 sm:mb-0">
           <img
-            className="mx-auto max-w-[400px] w-full"
+            className="mx-auto max-w-[290px] sm:max-w-[400px] "
             src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/3cfYZ62ndd3Fci44OcL9/media/6584047ab07792088de12df0.png"
             alt=""
           />
@@ -753,7 +753,7 @@ const Home = () => {
         </div>
         <div className="w-full sm:w-[545px] px-4 sm:px-0 mx-auto">
           <img
-            className="mx-auto max-w-[400px] w-full"
+            className="mx-auto max-w-[290px] sm:max-w-[400px]"
             src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/3cfYZ62ndd3Fci44OcL9/media/6584047ab07792088de12df0.png"
             alt=""
           />

@@ -308,7 +308,7 @@ const Checkout = () => {
 
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="py-2 mb-[20px]">
-            <h1 className="text-[24px] sm:text-[30px] text-justify max-w-[600px] tracking-[-1px] leading-[30px] mx-auto relative">
+            <h1 className="text-[24px] sm:text-[30px] text-justify sm:max-w-[600px] tracking-[-1px] leading-[30px] mx-auto relative">
               <span className="text-[#e73904] font-bold">
                 BONUS - The 'AI MONETIZATION' Blueprint:
               </span>
@@ -325,7 +325,7 @@ const Checkout = () => {
             src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/3cfYZ62ndd3Fci44OcL9/media/65965c08d7e274e11b1fcd8f.png"
           ></img>
           <img
-            className="mt-5 max-w-[600px] w-full h-auto mx-auto"
+            className="mt-5 sm:max-w-[600px] w-full h-auto mx-auto"
             src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/TKyEPyTWLdBiy80M6dQT/media/63fe6ac6c7b139380a42e260.png"
           ></img>
         </div>
@@ -333,7 +333,7 @@ const Checkout = () => {
         {/* -- */}
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="py-2 mb-5">
-            <h1 className="text-[24px] sm:text-[30px] text-justify max-w-[600px] tracking-tight leading-[1.2] mx-auto">
+            <h1 className="text-[24px] sm:text-[30px] text-justify sm:max-w-[600px] tracking-tight leading-[1.2] mx-auto">
               <span className="text-[#e73904] font-bold">
                 BONUS - Revolutionary 170+ AI Tools & Templates:
               </span>
@@ -358,14 +358,14 @@ const Checkout = () => {
             src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/3cfYZ62ndd3Fci44OcL9/media/659657c08619066018ad83b9.png"
           ></img>
           <img
-            className="mt-5 max-w-[600px] w-full h-auto mx-auto"
+            className="mt-5 sm:max-w-[600px] w-full h-auto mx-auto"
             src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/TKyEPyTWLdBiy80M6dQT/media/63fe6ac6c7b139380a42e260.png"
           ></img>
         </div>
         {/* -- */}
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="py-2 mb-5">
-            <h1 className="text-[24px] sm:text-[30px] text-justify max-w-[600px] tracking-tight leading-[1.2] mx-auto">
+            <h1 className="text-[24px] sm:text-[30px] text-justify sm:max-w-[600px] tracking-tight leading-[1.2] mx-auto">
               <span className="text-[#e73904] font-bold">
                 BONUS - 369 SECRET PROMPTS TO EARNING $10,000+ MONTHLY:
               </span>
@@ -381,7 +381,7 @@ const Checkout = () => {
             src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/3cfYZ62ndd3Fci44OcL9/media/65964665861906901aad4b61.png"
           ></img>
           <img
-            className="mt-5 max-w-[600px] w-full h-auto mx-auto"
+            className="mt-5 sm:max-w-[600px] w-full h-auto mx-auto"
             src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/TKyEPyTWLdBiy80M6dQT/media/63fe6ac6c7b139380a42e260.png"
           ></img>
         </div>
@@ -410,7 +410,7 @@ const Checkout = () => {
             src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/3cfYZ62ndd3Fci44OcL9/media/65965518d7e27419e51fc8d4.png"
           ></img>
           <img
-            className="mt-5 max-w-[600px] w-full h-auto mx-auto"
+            className="mt-5 sm:max-w-[600px] w-full h-auto mx-auto"
             src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/TKyEPyTWLdBiy80M6dQT/media/63fe6ac6c7b139380a42e260.png"
           ></img>
         </div>
@@ -432,7 +432,7 @@ const Checkout = () => {
             src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/3cfYZ62ndd3Fci44OcL9/media/65965772539b6d079abe9b85.png"
           ></img>
           <img
-            className="mt-5 max-w-[600px] w-full h-auto mx-auto"
+            className="mt-5 sm:max-w-[600px] w-full h-auto mx-auto"
             src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/TKyEPyTWLdBiy80M6dQT/media/63fe6ac6c7b139380a42e260.png"
           ></img>
         </div>
