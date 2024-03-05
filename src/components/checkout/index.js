@@ -33,7 +33,7 @@ const Checkout = () => {
 
         <div className="max-w-[819px] mx-auto">
           <img
-            className="max-w-[819px] mx-auto"
+            className="max-w-[200px] md:max-w-[819px] mx-auto"
             src="https://thefunnelmarketingkit.com/wp-content/uploads/2020/11/safe-checkout-350px-1.png"
           ></img>
           <h1 className="text-[24px] font-bold py-3">
