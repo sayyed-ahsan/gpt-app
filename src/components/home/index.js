@@ -19,7 +19,7 @@ const Home = () => {
     navigate("/checkout");
   };
   return (
-    <div className="px-2">
+    <div className="">
       <div className="bg-black text-white font-bold sm:text-[14px] md:text-[20px] lg:text-[25px] text-center py-3">
         🎉 GET 90% OFF TODAY FOR MARCH!
         <br />
