@@ -45,17 +45,23 @@ const ThankYouPage = () => {
             </span>
           </div>
 
+          {/*  */}
+
           <div className="my-5 max-w-[1160px] mx-auto">
-            <iframe
-              width="100%"
-              height=""
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ" // Use your video's embed link
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+            <div className="relative" style={{ paddingTop: "56.25%" }}>
+              {/* 16:9 aspect ratio */}
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ" // Use your video's embed link
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
+
+          {/*  */}
 
           <div className="max-w-[1160px] mx-auto text-lg sm:text-xl md:text-2xl lg:text-3xl pt-3 text-center">
             If you've any more questions, just drop us an email at{" "}

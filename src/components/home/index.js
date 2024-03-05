@@ -56,7 +56,10 @@ const Home = () => {
           </h1>
 
           <div className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[836px] rounded-full mx-auto text-center text-white bg-[#333333] py-2 sm:py-3 md:py-4 mt-3 mb-2">
-            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-[34px] font-bold">
+            <h1
+              className="text-xl sm:text-2xl md:text-3xl lg:text-[34px] font-bold"
+              onClick={handleButtonClick}
+            >
               Get All Prompts + $1600 in Bonuses today!
             </h1>
 
@@ -64,6 +67,7 @@ const Home = () => {
               NO QUESTION ASKED MONEY BACK GUARANTEE
             </h2>
           </div>
+
           <img
             className="mx-auto max-w-[200px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[400px]"
             src="https://selllikecrazybook.com/wp-content/uploads/2019/10/stock-levels.gif"
@@ -89,7 +93,7 @@ const Home = () => {
               Internet!
             </h1>
             <img
-              className="max-w-full h-auto mt-4 md:mt-6"
+              className="max-w-full h-auto mx-auto mt-4 md:mt-6"
               src="https://assets.cdn.filesafe.space/3cfYZ62ndd3Fci44OcL9/media/65965c5c539b6d682bbea643.gif"
               alt=""
             />
@@ -346,19 +350,7 @@ const Home = () => {
               $27!
             </h1>
 
-            <button
-              className="bg-[#e73904] hover:bg-[#cc3300] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#e73904] py-2 rounded-[29px] text-center transition duration-150 ease-in-out w-full"
-              onClick={handleButtonClick}
-            >
-              <div>
-                <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-white">
-                  GET All Prompts + $1600 in Bonuses Today!
-                </h1>
-                <h1 className="text-xs sm:text-sm md:text-base text-white">
-                  No questions asked money back guarantee
-                </h1>
-              </div>
-            </button>
+            <Button></Button>
 
             <div class="text-sm sm:text-base mt-4">
               If you curious to know how to consistently get paid to get new
@@ -529,42 +521,27 @@ const Home = () => {
           <h1 className="text-center text-2xl md:text-4xl lg:text-5xl text-white bg-[#e73904] p-2 md:p-4">
             <strong>Here's A Sneak Peek Of What You're Getting...👇</strong>
           </h1>
-          <div
-            className="mt-5 mx-auto"
-            style={{ maxWidth: "100%", overflow: "hidden" }}
-          >
-            <iframe
-              className="w-full"
-              style={{
-                height: "calc(100vw * 9 / 16)",
-                maxWidth: "1140px",
-                minHeight: "300px",
-              }}
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+          {/*  */}
+
+          <div className="my-5 max-w-[1160px] mx-auto">
+            <div className="relative" style={{ paddingTop: "56.25%" }}>
+              {/* 16:9 aspect ratio */}
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ" // Use your video's embed link
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
+
+          {/*  */}
         </div>
         <Accordion />
 
-        <div className="max-w-[650px] mx-auto my-5 px-4 sm:px-6 lg:px-8">
-          <button
-            className="bg-[#e73904] hover:bg-[#cc3300] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#e73904] py-2 rounded-[29px] text-center transition duration-150 ease-in-out w-full"
-            onClick={handleButtonClick}
-          >
-            <div>
-              <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-white">
-                GET All Prompts + $1600 in Bonuses Today!
-              </h1>
-              <h1 className="text-xs sm:text-sm md:text-base text-white">
-                No questions asked money back guarantee
-              </h1>
-            </div>
-          </button>
-        </div>
+        <Button></Button>
       </div>
 
       <img
