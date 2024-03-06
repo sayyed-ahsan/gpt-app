@@ -6,7 +6,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "intl-tel-input/build/css/intlTelInput.css";
 import intlTelInput from "intl-tel-input";
 import utils from "intl-tel-input/build/js/utils";
-import "tailwindcss/tailwind.css"; // Import Tailwi
+import "tailwindcss/tailwind.css";
 import "intl-tel-input";
 import Loading from "./Loading";
 import axios from "axios";
@@ -29,6 +29,24 @@ const CheckoutForm = () => {
     county: "",
   });
   const [errors, setErrors] = useState({});
+
+  const [country, setCountry] = useState('');
+  function getCountryName(lat, lng) {
+    const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`;
+
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        setCountry(data.address.country); // This will log the country name
+      })
+      .catch(error => console.error('Error:', error));
+  }
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition(function (position) {
+      console.log("Latitude is :", position.coords.latitude);
+      getCountryName(position.coords.latitude, position.coords.longitude);
+    });
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -53,25 +71,21 @@ const CheckoutForm = () => {
   useEffect(() => {
     const phoneInput = phoneInputRef.current;
 
-    // Initialize intlTelInput
     const iti = intlTelInput(phoneInput, {
       utilsScript: utils,
     });
 
-    // Set initial country based on the user's location
     iti.promise.then(() => {
       const countryCode = iti.getSelectedCountryData().iso2;
       iti.setCountry(countryCode);
     });
 
-    // Listen for the country change event
     phoneInput.addEventListener("countrychange", function () {
       const countryCode = iti.getSelectedCountryData().iso2;
       console.log("Selected country code:", countryCode);
     });
 
     return () => {
-      // Clean up on unmount
       iti.destroy();
     };
   }, []);
@@ -151,7 +165,7 @@ const CheckoutForm = () => {
   };
 
   const handleStripeSuccess = (result) => {
-    console.log(result);
+    console.error(result, clientSecret, 'invalid service', paypalOptions);
     // Handle successful payment with Stripe
   };
 
@@ -181,7 +195,7 @@ const CheckoutForm = () => {
         onSubmit={handleSubmit}
       >
         {/* -----1----- */}
-        <div className="px-4 max-w-[690px] mx-auto md:px-8 ">
+        <div className="px-2 max-w-[690px] mx-auto md:px-8 ">
           <p className="text-sm lg:text-base text-[#1571a8] font-bold text-center mb-2">
             Your Contact Information (For Bonuses)...
           </p>
@@ -208,16 +222,16 @@ const CheckoutForm = () => {
           <input
             type="text"
             name="number"
+            ref={phoneInputRef}
             value={formData.number}
             onChange={handleChange}
-            ref={phoneInputRef}
-            className=" inline-block sm:w-[400px] md:w-[600px] rounded-md border bg-background px-3 py-2 text-sm placeholder-text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#dadada] focus:border-[#dadada] disabled:opacity-50"
+            className="block number-felid rounded-md border bg-background px-3 py-2 text-sm placeholder-text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#dadada] focus:border-[#dadada] disabled:opacity-50"
             placeholder="Phone Number..."
           />
         </div>
 
         {/* -----2----- */}
-        <div className="bg-white px-8 py-4">
+        <div className="bg-white px-2 sm:px-8 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <span className="font-semibold text-[12px] mr-2">
@@ -276,7 +290,7 @@ const CheckoutForm = () => {
               }}
             >
               <img
-                className="ml-4"
+                className="sm:ml-4"
                 src="data:image/webp;base64,UklGRsYBAABXRUJQVlA4WAoAAAASAAAAGwAAEAAAQU5JTQYAAAAAAAAAAABBTk1GsgAAAAAAAAAAABsAABAAAA4BAANWUDhMmgAAAC8bAAQQH8GgbSRHx59rL/8/ys/gmH/FbSQ19F8pvxwHBs1/FIG/ppDrB1yyELIAuslyFqb4AEKWNQHOIiSbiaij+ADg3QGyESEADttIUqQ+Zmaeu84/y/v/mY8gov8TgH+eYwt5et+AvCoLck3eJuoOgQWlcQzIPbMgJ4uz0Ls7D2pLBKAefnxejhyqQlJaF2pjCG3ZUuiX+BpBTk1GJgAAAAAAAAAAAAAAAAAAAOYAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcAQU5NRrIAAAAAAAAAAAAbAAAQAABGAAAAVlA4TJoAAAAvGwAEEB/BoG0kR8efay//P8rP4Jh/xW0kNfRfKb8cBwbNfxSBv6aQ6wdcshCyALrJcham+ABCljUBziIkm4moo/gA4N0BshEhAA7bSFKkPmZmnrvOP8v7/5mPIKL/E4B/nmMLeXrfgLwqC3JN3ibqDoEFpXEMyD2zICeLs9C7Ow9qSwSgHn58Xo4cqkJSWhdqYwht2VLol/ga"
                 alt=""
               />
@@ -286,7 +300,7 @@ const CheckoutForm = () => {
                 Contents
               </span>
             </div>
-            <div className="bg-[#fbf8e3] p-3 border-[#ff9900]">
+            <div className="bg-[#fbf8e3] p-1 sm:p-3 border-[#ff9900]">
               <p className="text-[13px] sm:text-[16px] mb-2">
                 <span className="underline text-[#ff0000] font-bold ">
                   90% OFF (This page only) $12:
@@ -300,7 +314,7 @@ const CheckoutForm = () => {
           </div>
         </div>
         {/* ------4---- */}
-        <div className="max-w-4xl mx-auto my-4 px-8">
+        <div className="max-w-4xl mx-auto my-4 px-2 sm:px-8">
           <div className="text-[13px] font-bold pb-2">Order Summary</div>
           <div className="relative w-full overflow-auto">
             <table className="w-full caption-bottom text-sm">
@@ -394,12 +408,11 @@ const CheckoutForm = () => {
           <Elements stripe={stripePromise}>
             <button
               onClick={() => {
-                // Handle payment with Stripe
-                handleStripeSuccess("stripe result");
+                handleStripeSuccess("stripe result")
               }}
             >
               <img
-                className="px-4 w-full sm:max-w-[400px]"
+                className="px-2 sm:px-4 w-full sm:max-w-[400px]"
                 src="https://i.ibb.co/mXbfBWK/image.png"
                 alt="image"
               />
@@ -407,14 +420,14 @@ const CheckoutForm = () => {
           </Elements>
         </div>
 
-        <div className="flex justify-center items-center space-x-4 px-4">
+        <div className="flex justify-center items-center space-x-4 px-2 sm:px-4">
           <div className="w-full border-t border-gray-300" />
           <span className="text-sm text-gray-500">OR</span>
           <div className="w-full border-t border-gray-300" />
         </div>
 
         {/* ---- strip ---- */}
-        <div className="max-w-4xl mx-auto p-6">
+        <div className="max-w-4xl mx-auto p-2 sm:p-6">
           <div
             className=" p-3 border-[1px] rounded-[5px] border-gray-200"
             id="payment-card"
@@ -446,7 +459,7 @@ const CheckoutForm = () => {
             value={formData.county}
             onChange={handleChange}
           >
-            <option value="">country</option>
+            <option value="">{country ? country : 'Afghanistan'}</option>
             <option value="Afghanistan">Afghanistan</option>
             <option value="Aland Islands">Aland Islands</option>
             <option value="Albania">Albania</option>
@@ -802,7 +815,7 @@ const CheckoutForm = () => {
             <Loading />
           ) : (
             <button
-              className="bg-[#e93d3d] w-full rounded-[10px] my-3 pt-2 pb-4 px-5"
+              className="bg-[#e93d3d] w-full rounded-[10px] my-3 pt-2 pb-4 px-5 cursor-pointer"
               type="submit"
               disabled={!stripe}
             >

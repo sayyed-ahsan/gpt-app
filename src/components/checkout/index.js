@@ -7,7 +7,7 @@ const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY);
 
 const Checkout = () => {
   return (
-    <div className="m-4">
+    <div className="px-2">
       <div className=" shadow-lg border max-w-[819px] mx-auto text-center rounded-lg py-4 px-4 my-5">
         {/* -------1---------  */}
 
@@ -15,7 +15,7 @@ const Checkout = () => {
           <h1 className="text-[24px] text-[#e93d3d] font-bold">
             Limited Time Sale – 90% OFF
           </h1>
-          <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/3cfYZ62ndd3Fci44OcL9/media/65975f4dae13964ddf466f8a.jpeg"></img>
+          <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/3cfYZ62ndd3Fci44OcL9/media/65975f4dae13964ddf466f8a.jpeg" alt='' />
         </div>
         {/*--------- payment------------ */}
         <div className=" shadow-lg border max-w-[693px] mx-auto text-center rounded-lg py-4 mt-5">
@@ -35,14 +35,14 @@ const Checkout = () => {
           <img
             className="max-w-[200px] md:max-w-[819px] mx-auto"
             src="https://thefunnelmarketingkit.com/wp-content/uploads/2020/11/safe-checkout-350px-1.png"
-          ></img>
+            alt='' />
           <h1 className="text-[24px] font-bold py-3">
             60 Days Money Back Guarantee
           </h1>
           <img
             className="max-w-[159px] mx-auto"
             src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/TKyEPyTWLdBiy80M6dQT/media/8193d3cc-eb59-4d90-9906-f95fb0721c44.jpeg"
-          ></img>
+            alt='' />
         </div>
 
         <div className="divide-y divide-dashed divide-black max-w-[659px] mx-auto">
@@ -51,237 +51,237 @@ const Checkout = () => {
             delighted for any reason (or no reason at all) simply let us know
             within 60 days and we'll refund your payment right away.
           </p>
-          <h1 className="pt-5 text-[28px] text-bold">
-            Congratulations! Here's Everything You're Getting Today For Only
-            $197.00 $27
+          <h1 className="pt-5 text-[22px] sm:text-[28px] font-bold">
+            <span className="text-[#e93d3d] underline">Congratulations!</span>   Here's Everything You're Getting Today For Only
+            $197.00   <span className="text-[#e93d3d] underline">$27</span>
           </h1>
         </div>
 
         <img
           className="max-w-[159px] mx-auto p-5"
           src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/3cfYZ62ndd3Fci44OcL9/media/b5b39dfa-3097-4e1e-8612-98a845432271.png"
-        ></img>
+          alt='' />
 
         {/* ----------------- */}
 
         <div className=" max-w-[650px] mx-auto text-left">
           <ul>
             <div className="flex py-2">
-              <span className="text-[#e93d3d] text-[30px] mr-2 font-bold">
+              <span className="text-[#e93d3d] text-[18px] sm:text-[30px] mr-2 font-bold">
                 {" "}
                 ✓{" "}
               </span>
-              <li className="text-[30px] font-bold">
+              <li className="text-[18px] sm:text-[30px] font-bold">
                 {" "}
                 1000+ Sales Funnel Prompts (including copywriting)
               </li>
             </div>
             <div className="flex py-2">
-              <span className="text-[#e93d3d] text-[30px] mr-2 font-bold">
+              <span className="text-[#e93d3d] text-[18px] sm:text-[30px] mr-2 font-bold">
                 {" "}
                 ✓{" "}
               </span>
-              <li className="text-[30px] font-bold">Facebook™ Ad Prompts</li>
+              <li className="text-[18px] sm:text-[30px] font-bold">Facebook™ Ad Prompts</li>
             </div>
             <div className="flex py-2">
-              <span className="text-[#e93d3d] text-[30px] mr-2 font-bold">
+              <span className="text-[#e93d3d] text-[18px] sm:text-[30px] mr-2 font-bold">
                 {" "}
                 ✓{" "}
               </span>
-              <li className="text-[30px] font-bold"> Instagram™ Ad Prompts</li>
+              <li className="text-[18px] sm:text-[30px] font-bold"> Instagram™ Ad Prompts</li>
             </div>
             <div className="flex py-2">
-              <span className="text-[#e93d3d] text-[30px] mr-2 font-bold">
+              <span className="text-[#e93d3d] text-[18px] sm:text-[30px] mr-2 font-bold">
                 {" "}
                 ✓{" "}
               </span>
-              <li className="text-[30px] font-bold">TikTok™ Ad Prompts</li>
+              <li className="text-[18px] sm:text-[30px] font-bold">TikTok™ Ad Prompts</li>
             </div>
             <div className="flex py-2">
-              <span className="text-[#e93d3d] text-[30px] mr-2 font-bold">
+              <span className="text-[#e93d3d] text-[18px] sm:text-[30px] mr-2 font-bold">
                 {" "}
                 ✓{" "}
               </span>
-              <li className="text-[30px] font-bold">YouTube™ Ad Prompts</li>
+              <li className="text-[18px] sm:text-[30px] font-bold">YouTube™ Ad Prompts</li>
             </div>
             <div className="flex py-2">
-              <span className="text-[#e93d3d] text-[30px] mr-2 font-bold">
+              <span className="text-[#e93d3d] text-[18px] sm:text-[30px] mr-2 font-bold">
                 {" "}
                 ✓{" "}
               </span>
-              <li className="text-[30px] font-bold">
+              <li className="text-[18px] sm:text-[30px] font-bold">
                 2000+ Email Marketing Prompts
               </li>
             </div>
             <div className="flex py-2">
-              <span className="text-[#e93d3d] text-[30px] mr-2 font-bold">
+              <span className="text-[#e93d3d] text-[18px] sm:text-[30px] mr-2 font-bold">
                 {" "}
                 ✓{" "}
               </span>
-              <li className="text-[30px] font-bold">Ecommerce Prompts</li>
+              <li className="text-[18px] sm:text-[30px] font-bold">Ecommerce Prompts</li>
             </div>
             <div className="flex py-2">
-              <span className="text-[#e93d3d] text-[30px] mr-2 font-bold">
+              <span className="text-[#e93d3d] text-[18px] sm:text-[30px] mr-2 font-bold">
                 {" "}
                 ✓{" "}
               </span>
-              <li className="text-[30px] font-bold">Lead Generation Prompts</li>
+              <li className="text-[18px] sm:text-[30px] font-bold">Lead Generation Prompts</li>
             </div>
             <div className="flex py-2">
-              <span className="text-[#e93d3d] text-[30px] mr-2 font-bold">
+              <span className="text-[#e93d3d] text-[18px] sm:text-[30px] mr-2 font-bold">
                 {" "}
                 ✓{" "}
               </span>
-              <li className="text-[30px] font-bold">
+              <li className="text-[18px] sm:text-[30px] font-bold">
                 Affiliate Marketing Prompts
               </li>
             </div>
 
             <div className="flex py-2">
-              <span className="text-[#e93d3d] text-[30px] mr-2 font-bold">
+              <span className="text-[#e93d3d] text-[18px] sm:text-[30px] mr-2 font-bold">
                 {" "}
                 ✓{" "}
               </span>
-              <li className="text-[30px] font-bold">
+              <li className="text-[18px] sm:text-[30px] font-bold">
                 1400+ Social Media Marketing Prompts
               </li>
             </div>
 
             <div className="flex py-2">
-              <span className="text-[#e93d3d] text-[30px] mr-2 font-bold">
+              <span className="text-[#e93d3d] text-[18px] sm:text-[30px] mr-2 font-bold">
                 {" "}
                 ✓{" "}
               </span>
-              <li className="text-[30px] font-bold"> Business Prompts </li>
+              <li className="text-[18px] sm:text-[30px] font-bold"> Business Prompts </li>
             </div>
             <div className="flex py-2">
-              <span className="text-[#e93d3d] text-[30px] mr-2 font-bold">
+              <span className="text-[#e93d3d] text-[18px] sm:text-[30px] mr-2 font-bold">
                 {" "}
                 ✓{" "}
               </span>
-              <li className="text-[30px] font-bold">
+              <li className="text-[18px] sm:text-[30px] font-bold">
                 {" "}
                 Influencer Marketing Prompts{" "}
               </li>
             </div>
             <div className="flex py-2">
-              <span className="text-[#e93d3d] text-[30px] mr-2 font-bold">
+              <span className="text-[#e93d3d] text-[18px] sm:text-[30px] mr-2 font-bold">
                 {" "}
                 ✓{" "}
               </span>
-              <li className="text-[30px] font-bold"> Twitter™ Prompts </li>
+              <li className="text-[18px] sm:text-[30px] font-bold"> Twitter™ Prompts </li>
             </div>
             <div className="flex py-2">
-              <span className="text-[#e93d3d] text-[30px] mr-2 font-bold">
+              <span className="text-[#e93d3d] text-[18px] sm:text-[30px] mr-2 font-bold">
                 {" "}
                 ✓{" "}
               </span>
-              <li className="text-[30px] font-bold"> LinkedIn™ Prompts </li>
+              <li className="text-[18px] sm:text-[30px] font-bold"> LinkedIn™ Prompts </li>
             </div>
             <div className="flex py-2">
-              <span className="text-[#e93d3d] text-[30px] mr-2 font-bold">
+              <span className="text-[#e93d3d] text-[18px] sm:text-[30px] mr-2 font-bold">
                 {" "}
                 ✓{" "}
               </span>
-              <li className="text-[30px] font-bold"> SEO Prompts </li>
+              <li className="text-[18px] sm:text-[30px] font-bold"> SEO Prompts </li>
             </div>
             <div className="flex py-2">
-              <span className="text-[#e93d3d] text-[30px] mr-2 font-bold">
+              <span className="text-[#e93d3d] text-[18px] sm:text-[30px] mr-2 font-bold">
                 {" "}
                 ✓{" "}
               </span>
-              <li className="text-[30px] font-bold">
+              <li className="text-[18px] sm:text-[30px] font-bold">
                 {" "}
                 Outreach Message Prompts{" "}
               </li>
             </div>
             <div className="flex py-2">
-              <span className="text-[#e93d3d] text-[30px] mr-2 font-bold">
+              <span className="text-[#e93d3d] text-[18px] sm:text-[30px] mr-2 font-bold">
                 {" "}
                 ✓{" "}
               </span>
-              <li className="text-[30px] font-bold">
+              <li className="text-[18px] sm:text-[30px] font-bold">
                 {" "}
                 3600+ Closing Sales Prompts (including closing script){" "}
               </li>
             </div>
             <div className="flex py-2">
-              <span className="text-[#e93d3d] text-[30px] mr-2 font-bold">
+              <span className="text-[#e93d3d] text-[18px] sm:text-[30px] mr-2 font-bold">
                 {" "}
                 ✓{" "}
               </span>
-              <li className="text-[30px] font-bold">
+              <li className="text-[18px] sm:text-[30px] font-bold">
                 {" "}
                 1000+ Landing Page Prompts{" "}
               </li>
             </div>
             <div className="flex py-2">
-              <span className="text-[#e93d3d] text-[30px] mr-2 font-bold">
+              <span className="text-[#e93d3d] text-[18px] sm:text-[30px] mr-2 font-bold">
                 {" "}
                 ✓{" "}
               </span>
-              <li className="text-[30px] font-bold">
+              <li className="text-[18px] sm:text-[30px] font-bold">
                 {" "}
                 1000+ Conversion Rate Optimization Prompts{" "}
               </li>
             </div>
             <div className="flex py-2">
-              <span className="text-[#e93d3d] text-[30px] mr-2 font-bold">
+              <span className="text-[#e93d3d] text-[18px] sm:text-[30px] mr-2 font-bold">
                 {" "}
                 ✓{" "}
               </span>
-              <li className="text-[30px] font-bold">
+              <li className="text-[18px] sm:text-[30px] font-bold">
                 {" "}
                 2200+ Productivity Prompts (you'll save time on using proven
                 ChatGPT prompts){" "}
               </li>
             </div>
             <div className="flex py-2">
-              <span className="text-[#e93d3d] text-[30px] mr-2 font-bold">
+              <span className="text-[#e93d3d] text-[18px] sm:text-[30px] mr-2 font-bold">
                 {" "}
                 ✓{" "}
               </span>
-              <li className="text-[30px] font-bold">
+              <li className="text-[18px] sm:text-[30px] font-bold">
                 {" "}
                 950+ Customer Support Prompts{" "}
               </li>
             </div>
             <div className="flex py-2">
-              <span className="text-[#e93d3d] text-[30px] mr-2 font-bold">
+              <span className="text-[#e93d3d] text-[18px] sm:text-[30px] mr-2 font-bold">
                 {" "}
                 ✓{" "}
               </span>
-              <li className="text-[30px] font-bold">
+              <li className="text-[18px] sm:text-[30px] font-bold">
                 {" "}
                 1300+ Product Management Prompts for your most repeated task{" "}
               </li>
             </div>
             <div className="flex py-2">
-              <span className="text-[#e93d3d] text-[30px] mr-2 font-bold">
+              <span className="text-[#e93d3d] text-[18px] sm:text-[30px] mr-2 font-bold">
                 {" "}
                 ✓{" "}
               </span>
-              <li className="text-[30px] font-bold">
+              <li className="text-[18px] sm:text-[30px] font-bold">
                 {" "}
                 1000+ Human Resources Prompts{" "}
               </li>
             </div>
             <div className="flex py-2">
-              <span className="text-[#e93d3d] text-[30px] mr-2 font-bold">
+              <span className="text-[#e93d3d] text-[18px] sm:text-[30px] mr-2 font-bold">
                 {" "}
                 ✓{" "}
               </span>
-              <li className="text-[30px] font-bold">
+              <li className="text-[18px] sm:text-[30px] font-bold">
                 {" "}
                 Proven tricks to unlock ChatGPT fully{" "}
               </li>
             </div>
             <div className="flex py-2">
-              <span className="text-[#e93d3d] text-[30px] mr-2 font-bold">
+              <span className="text-[#e93d3d] text-[18px] sm:text-[30px] mr-2 font-bold">
                 {" "}
                 ✓{" "}
               </span>
-              <li className="text-[30px] font-bold">
+              <li className="text-[18px] sm:text-[30px] font-bold">
                 {" "}
                 Exact steps + examples to get reliable results & scale{" "}
               </li>
@@ -297,18 +297,18 @@ const Checkout = () => {
           <img
             className="pt-5 mt-5 w-full h-auto"
             src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/3cfYZ62ndd3Fci44OcL9/media/6583f83bcd21c266f670afcf.png"
-          ></img>
+            alt='' />
           <img
             className="mt-5 w-full h-auto"
             src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/TKyEPyTWLdBiy80M6dQT/media/63fe6ac6c7b139380a42e260.png"
-          ></img>
+            alt='' />
         </div>
 
         {/* --------------- */}
 
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="py-2 mb-[20px]">
-            <h1 className="text-[24px] sm:text-[30px] text-justify sm:max-w-[600px] tracking-[-1px] leading-[30px] mx-auto relative">
+            <h1 className="text-[20px] sm:text-[30px] text-justify sm:max-w-[600px] tracking-[-1px] leading-[30px] mx-auto relative">
               <span className="text-[#e73904] font-bold">
                 BONUS - The 'AI MONETIZATION' Blueprint:
               </span>
@@ -323,17 +323,17 @@ const Checkout = () => {
           <img
             className="max-w-[350px] w-full h-auto mx-auto"
             src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/3cfYZ62ndd3Fci44OcL9/media/65965c08d7e274e11b1fcd8f.png"
-          ></img>
+            alt='' />
           <img
             className="mt-5 sm:max-w-[600px] w-full h-auto mx-auto"
             src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/TKyEPyTWLdBiy80M6dQT/media/63fe6ac6c7b139380a42e260.png"
-          ></img>
+            alt='' />
         </div>
 
         {/* -- */}
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="py-2 mb-5">
-            <h1 className="text-[24px] sm:text-[30px] text-justify sm:max-w-[600px] tracking-tight leading-[1.2] mx-auto">
+            <h1 className="text-[20px] sm:text-[30px] text-start sm:max-w-[600px] tracking-tight sm:leading-[1.2] mx-auto">
               <span className="text-[#e73904] font-bold">
                 BONUS - Revolutionary 170+ AI Tools & Templates:
               </span>
@@ -356,16 +356,16 @@ const Checkout = () => {
           <img
             className="max-w-[350px] w-full h-auto mx-auto"
             src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/3cfYZ62ndd3Fci44OcL9/media/659657c08619066018ad83b9.png"
-          ></img>
+            alt='' />
           <img
             className="mt-5 sm:max-w-[600px] w-full h-auto mx-auto"
             src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/TKyEPyTWLdBiy80M6dQT/media/63fe6ac6c7b139380a42e260.png"
-          ></img>
+            alt='' />
         </div>
         {/* -- */}
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="py-2 mb-5">
-            <h1 className="text-[24px] sm:text-[30px] text-justify sm:max-w-[600px] tracking-tight leading-[1.2] mx-auto">
+            <h1 className="text-[20px] sm:text-[30px] text-start sm:max-w-[600px] tracking-tight sm:leading-[1.2] mx-auto">
               <span className="text-[#e73904] font-bold">
                 BONUS - 369 SECRET PROMPTS TO EARNING $10,000+ MONTHLY:
               </span>
@@ -379,17 +379,17 @@ const Checkout = () => {
           <img
             className="max-w-[350px] w-full h-auto mx-auto"
             src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/3cfYZ62ndd3Fci44OcL9/media/65964665861906901aad4b61.png"
-          ></img>
+            alt='' />
           <img
             className="mt-5 sm:max-w-[600px] w-full h-auto mx-auto"
             src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/TKyEPyTWLdBiy80M6dQT/media/63fe6ac6c7b139380a42e260.png"
-          ></img>
+            alt='' />
         </div>
 
         {/* -- */}
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="py-2 mb-5">
-            <h1 className="text-[24px] sm:text-[30px] text-justify max-w-full sm:max-w-[600px] tracking-tight leading-snug mx-auto">
+            <h1 className="text-[20px] sm:text-[30px] text-justify max-w-full sm:max-w-[600px] tracking-tight leading-snug mx-auto">
               <span className="text-[#e73904] font-bold">
                 BONUS - A.I. HIGH TICKET CLOSING FRAMEWORK:
               </span>
@@ -408,16 +408,16 @@ const Checkout = () => {
           <img
             className="max-w-[350px] w-full h-auto mx-auto"
             src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/3cfYZ62ndd3Fci44OcL9/media/65965518d7e27419e51fc8d4.png"
-          ></img>
+            alt='' />
           <img
             className="mt-5 sm:max-w-[600px] w-full h-auto mx-auto"
             src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/TKyEPyTWLdBiy80M6dQT/media/63fe6ac6c7b139380a42e260.png"
-          ></img>
+            alt='' />
         </div>
         {/* -- */}
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="py-2 mb-5">
-            <h1 className="text-[24px] sm:text-[30px] text-justify max-w-full sm:max-w-[600px] tracking-tight leading-snug mx-auto">
+            <h1 className="text-[20px] sm:text-[30px] text-justify max-w-full sm:max-w-[600px] tracking-tight leading-snug mx-auto">
               <span className="text-[#e73904] font-bold">
                 BONUS - CHATGPT AUTOMATIC SALES:
               </span>
@@ -430,11 +430,11 @@ const Checkout = () => {
           <img
             className="max-w-[350px] w-full h-auto mx-auto"
             src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/3cfYZ62ndd3Fci44OcL9/media/65965772539b6d079abe9b85.png"
-          ></img>
+            alt='' />
           <img
             className="mt-5 sm:max-w-[600px] w-full h-auto mx-auto"
             src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/TKyEPyTWLdBiy80M6dQT/media/63fe6ac6c7b139380a42e260.png"
-          ></img>
+            alt='' />
         </div>
         {/* -- */}
 
@@ -454,12 +454,12 @@ const Checkout = () => {
         {/* -------------- */}
 
         <div className="divide-y divide-black max-w-lg mx-auto px-4 sm:max-w-xl md:max-w-2xl">
-          <p className="mb-5 text-[#e73904] text-2xl sm:text-3xl font-bold pt-5 text-center">
+          <p className="mb-5 text-[#e73904] text-[20px] sm:text-3xl font-bold pt-5 text-center">
             Master ChatGPT while your competitors are still trying to figure it
             out!
           </p>
           <div className="pt-5 text-center">
-            <h1 className="text-2xl sm:text-3xl">
+            <h1 className="text-[20px] sm:text-3xl">
               Total Value $3,997
               <br />
               <span className="text-base sm:text-lg line-through">
@@ -472,27 +472,29 @@ const Checkout = () => {
         {/* -------------- */}
 
         <div className="text-center px-4 py-8">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+          <h1 className="text-[20px] md:text-5xl lg:text-6xl font-bold leading-tight">
             Get <span className="underline">Everything</span> For Just:
             <br /> $27
           </h1>
 
-          <button className="mt-6 font-bold text-white bg-[#e74c3c] text-xl md:text-3xl px-10 py-4 rounded-md transition-all hover:bg-[#c0392b]">
+          <button className="mt-6 font-bold text-white bg-[#e74c3c] text-[18px] md:text-3xl px-3 sm:px-10 py-4 rounded-md transition-all hover:bg-[#c0392b] cursor-pointer">
             Get All Prompts + $1600 <br className="hidden md:inline" /> Toolkits
             in Bonuses Today!
           </button>
 
-          <p className="mt-4 text-lg">
+          <p className="mt-4 text-[17px] sm:text-lg">
             Zero risk with our 60-day money-back guarantee
           </p>
         </div>
 
         {/* -------------- */}
       </div>
+      <div className=" bg-[#f3f4f5] p-8 mt-[80px]">
+        <p className="text-center">
+          Copyright © 2023 - All Rights Reserved.
+        </p>
+      </div>
 
-      <p className="text-center mt-[80px]">
-        Copyright © 2023 - All Rights Reserved.
-      </p>
     </div>
   );
 };

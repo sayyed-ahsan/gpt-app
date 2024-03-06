@@ -6,10 +6,10 @@ const AccordionItem = ({ title, extra, children }) => {
     return (
         <div className={`mb-2 rounded-[10px] ${isOpen ? 'bg-white' : 'bg-black'}`}>
             <button
-                className={`flex justify-between items-center rounded-t-[10px] w-full p-5 text-left font-bold ${isOpen ? 'text-black' : 'text-white'} text-[20px] transition-colors duration-150`}
+                className={`flex justify-between items-center rounded-t-[10px] w-full py-3 px-4 text-left font-bold ${isOpen ? 'text-black' : 'text-white'} text-[20px] transition-colors duration-150`}
                 onClick={() => setIsOpen(!isOpen)}
             >
-                <span>{title}{' '}<span className='font-normal'>{extra}</span></span>
+                <span className='text-[12px] sm:text-[20px]'>{title}{' '}<span className='font-normal'>{extra}</span></span>
                 {isOpen ? (
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 transform transition-transform duration-500 rotate-180">
                         <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
