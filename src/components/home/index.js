@@ -10,6 +10,7 @@ import AICoachmaker from "./AICoachmaker";
 import Accordion2 from "./Accordion2";
 import Button from "./Button";
 import Modal from "./Modal";
+import Video from "../core/Video";
 
 const Home = () => {
 
@@ -526,18 +527,8 @@ const Home = () => {
           {/*  */}
 
           <div className="my-5 max-w-[1160px] mx-auto">
-            <div className="relative" style={{ paddingTop: "56.25%" }}>
-              <iframe
-                className="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/watch?v=RZ1g8NJGLME" // Added autoplay=1&mute=1 for autoplay and mute
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-
-
-
+            <div className="relative">
+              <Video />
             </div>
           </div>
 
