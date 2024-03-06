@@ -10,6 +10,8 @@ const Video = () => {
         cloudinaryRef.current = window.cloudinary;
         cloudinaryRef.current.videoPlayer(videoRef.current, {
             cloud_name: 'dtl6yswho',
+            autoplay: true, // Enable autoplay
+            muted: true, // Mute the video to increase the likelihood that autoplay will work
         });
     }, []);
 
@@ -20,7 +22,7 @@ const Video = () => {
                 ref={videoRef}
                 data-cld-public-id='ngybfndymeh4dak9ywae'
                 controls
-            // className="responsive-video" // Use className for styling
+                muted={true} // Ensure the video element itself is muted as well
             />
         </div>
     );
