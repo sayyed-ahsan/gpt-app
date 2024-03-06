@@ -172,8 +172,8 @@ const CheckoutForm = () => {
   const sendEmail = async (e) => {
     try {
       const response = await axios.post(
-        "https://gpt-sable-eight.vercel.appsendEmail",
-        formData
+        "https://gpt-sable-eight.vercel.app/sendEmail",
+        { ...formData, amount }
       );
       setProcessing(false);
       window.history.pushState(null, null, `/thankyou`);

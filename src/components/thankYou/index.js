@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Footer from "../core/footer";
 import Loading from "../checkout/Loading";
+import Video from "../core/Video";
 
 const ThankYouPage = () => {
   const [show, setshow] = useState(false);
@@ -47,15 +48,8 @@ const ThankYouPage = () => {
           {/*  */}
 
           <div className="my-5 max-w-[1160px] mx-auto">
-            <div className="relative" style={{ paddingTop: "56.25%" }}>
-              {/* 16:9 aspect ratio */}
-              <iframe
-                className="absolute top-0 left-0 w-full h-full"
-                src="https://youtu.be/RZ1g8NJGLME?si=6vlPI1-oKaJ56X7l" // Use your video's embed link
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+            <div className="relative">
+              <Video />
             </div>
           </div>
 

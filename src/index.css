@@ -35,6 +35,17 @@ img {
   margin-left: auto;
 }
 
+
+.video-container {
+  max-height: 600px;
+}
+
+@media only screen and (max-width: 900px) {
+  .video-container {
+    max-height: 440px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .number-felid {
     width: 660px;
@@ -92,6 +103,10 @@ img {
 @media only screen and (max-width: 700px) {
   .number-felid {
     width: 615px;
+  }
+
+  .video-container {
+    max-height: 350px;
   }
 }
 
@@ -164,6 +179,10 @@ img {
 @media only screen and (max-width: 660px) {
   .number-felid {
     width: 575px;
+  }
+
+  .video-container {
+    max-height: 230px;
   }
 }
 
@@ -452,6 +471,10 @@ img {
 @media only screen and (max-width: 420px) {
   .number-felid {
     width: 335px;
+  }
+
+  .video-container {
+    max-height: 160px;
   }
 }
 
