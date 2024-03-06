@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Footer from "../core/footer";
-import { useParams } from "react-router-dom";
 import Loading from "../checkout/Loading";
 
 const ThankYouPage = () => {
   const [show, setshow] = useState(false);
-  const { id } = useParams();
+
   useEffect(() => {
     const data = localStorage.getItem("payment");
     if (data) {
@@ -52,9 +51,8 @@ const ThankYouPage = () => {
               {/* 16:9 aspect ratio */}
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ" // Use your video's embed link
+                src="https://youtu.be/RZ1g8NJGLME?si=6vlPI1-oKaJ56X7l" // Use your video's embed link
                 title="YouTube video player"
-                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
@@ -63,15 +61,15 @@ const ThankYouPage = () => {
 
           {/*  */}
 
-          <div className="max-w-[1160px] mx-auto text-lg sm:text-xl md:text-2xl lg:text-3xl pt-3 text-center">
+          <div className="max-w-[1160px] mx-auto text-[14px] sm:text-xl md:text-2xl lg:text-3xl pt-3 px-2 text-center">
             If you've any more questions, just drop us an email at{" "}
-            <span className="text-[#188bf6] ml-2 mr-2 hover:underline">
+            <span className="text-[#188bf6] hover:underline">
               support@aitoolkitsforcoaches.com
             </span>{" "}
             and we will take care of you.
           </div>
 
-          <div className="max-w-[1160px] mx-auto text-lg sm:text-xl md:text-2xl lg:text-3xl pt-3 text-center my-[20px]">
+          <div className="max-w-[1160px] mx-auto text-[14px] sm:text-xl md:text-2xl lg:text-3xl pt-3  text-center my-[20px]">
             If you want to build your funnels and get more clients online, you
             can{" "}
             <span className="font-bold text-[#188bf6] ml-2 mr-2 hover:underline">
@@ -82,7 +80,7 @@ const ThankYouPage = () => {
             team👇
           </div>
 
-          <div className="flex items-center justify-center py-2">
+          <div className="flex items-center justify-center py-2 p-2">
             <div className=" shadow-2xl shadow-[#e73904]  bg-[#e73904] max-w-xs sm:max-w-sm md:max-w-md lg:w-auto h-auto rounded-3xl p-3 text-white flex items-center justify-center hover:scale-105 transition-transform duration-300 ease-in-out">
               <div>
                 <h1 className="font-bold text-lg sm:text-xl md:text-2xl text-center">

@@ -3,7 +3,7 @@ import AccordionItem from './AccordionItem';
 
 const Accordion = () => {
     return (
-        <div className='max-w-[1160px] mx-auto mt-[50px]'>
+        <div className='max-w-[1060px] mx-auto mt-[50px] px-2'>
             <AccordionItem title="Day 1 | How to Use ChatGPT? NO. 1 AI Tool to Make 7-FIGURE ONLINE INCOME">
                 ➡️ Master ChatGPT <br />
                 🤖 How to Use ChatGPT?<br />

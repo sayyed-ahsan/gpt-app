@@ -8,7 +8,7 @@ const AccordionItem2 = ({ title, extra, children }) => {
                 className={`flex justify-between items-center rounded-t-[10px] w-full px-4 sm:px-5 py-3 sm:py-4 text-left ${isOpen ? 'text-[#ea572a]' : 'text-black'} text-[18px] sm:text-[24px] transition-colors duration-150`}
                 onClick={() => setIsOpen(!isOpen)}
             >
-                <span>{title} <span className='font-normal'>{extra}</span></span>
+                <span className='text-[15px] sm:text-[20px]'>{title} <span className='font-normal'>{extra}</span></span>
                 {isOpen ? (
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5 sm:w-6 sm:h-6 transform transition-transform duration-300 rotate-180">
                         <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />

@@ -30,7 +30,7 @@ const OrderSummary = () => {
     ]
 
     return (
-        <div className=" shadow-lg border max-w-[819px] mx-auto text-center rounded-lg py-[30px] px-[50px] my-6">
+        <div className=" shadow-lg border max-w-[819px] mx-auto text-center rounded-lg py-[30px] sm:px-[50px] my-6">
             {/* -------1---------  */}
             <div>
                 <p className='text-center text-[6rem] sm:text-[100px]'>🔥</p>
@@ -47,7 +47,7 @@ const OrderSummary = () => {
                                 <span className="text-[#e93d3d] text-[24px] sm:text-[30px] mr-2 font-bold">
                                     ✓
                                 </span>
-                                <li className="text-[20px] sm:text-[30px] font-bold">
+                                <li className="text-[18px] sm:text-[30px] font-bold">
                                     {item}
                                 </li>
                             </div>

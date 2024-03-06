@@ -3,9 +3,9 @@ import Button from './Button';
 
 const InstantlyUnlock = () => {
     return (
-        <div className='bg-[#f9f9f9] my-[60px] py-[50px]'>
+        <div className='bg-[#f9f9f9] my-[60px] py-[50px] px-2'>
 
-            <p className='text-center text-[26px] my-[20px] font-bold'>
+            <p className='text-center text-[18px] sm:text-[26px] my-[20px] font-bold'>
                 And with these copy & paste prompts, you'll be able to:
             </p>
 
@@ -41,7 +41,7 @@ const InstantlyUnlock = () => {
 
 
 
-            <h1 className='text-[36px] font-bold leading-[1em] text-center my-[50px]'>
+            <h1 className='text-[26px] sm:text-[36px] font-bold leading-[1em] text-center my-[50px]'>
                 If AI Can Do It <span className='underline text-[#e93d3d]'>Perfectly</span>.
                 It’s Now <span className='underline text-[#e93d3d]'>In Your Toolkit</span>.
             </h1>
@@ -72,13 +72,13 @@ const InstantlyUnlock = () => {
             <Button></Button>
             <p className='text-center'>Zero risk with our 60-day money-back guarantee</p>
 
-            <h1 className='text-center text-[30px] text-white bg-black font-bold max-w-[1130px] mx-auto my-[60px]'>
+            <h1 className='text-center text-[20px] sm:text-[30px] text-white bg-black font-bold max-w-[1130px] mx-auto my-[60px]'>
                 SPECIAL this Month Update: Marketing GPT Bot
             </h1>
 
             <div className='max-w-[575px] mx-auto'>
-                <p className='text-[26px] mb-[25px]'>ChatGPT recently rolled out a new feature that lets you create a custom-made bot tailored to your needs.</p>
-                <p className='text-[26px] mb-[25px]'>
+                <p className='text-[20px] sm:text-[26px] mb-[25px]'>ChatGPT recently rolled out a new feature that lets you create a custom-made bot tailored to your needs.</p>
+                <p className='text-[20px] sm:text-[26px] mb-[25px]'>
                     It’s like a personalized version of ChatGPT!
                 </p>
             </div>
@@ -86,18 +86,18 @@ const InstantlyUnlock = () => {
             <img className='mx-auto' src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/3cfYZ62ndd3Fci44OcL9/media/658416d8b07792d791e7385d.png" alt="" />
 
             <div className='max-w-[575px] mx-auto'>
-                <p className='text-[26px] mb-[35px]'>16,000 ChatGPT Prompts + Toolkits GPT = Scaling Your Business</p>
-                <p className='text-[26px] mb-[35px]'>
+                <p className='text-[20px] sm:text-[26px] mb-[35px]'>16,000 ChatGPT Prompts + Toolkits GPT = Scaling Your Business</p>
+                <p className='text-[20px] sm:text-[26px] mb-[35px]'>
                     <b>👉 Need help with coming up with your next marketing strategy? 📊</b>
                     <br />
                     This Custom-made GPT is your go-to for brainstorming and refining your marketing strategies.
                 </p>
-                <p className='text-[26px] mb-[35px]'>
+                <p className='text-[19px] sm:text-[26px] mb-[35px]'>
                     <b>👉 Want your site to rank higher on Google or get viral on social media? 📈</b>
                     <br />
                     Ask our GPT.
                 </p>
-                <p className='text-[26px] mb-[45px]'>
+                <p className='text-[19px] sm:text-[26px] mb-[45px]'>
                     <b>👉 Want to monetize your email list and turn it into a goldmine? 💲</b>
                     <br />
                     Let our Marketing GPT get higher open rates and conversions

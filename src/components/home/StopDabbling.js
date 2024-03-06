@@ -30,12 +30,12 @@ const StopDabbling = () => {
     "Exact steps + examples to get reliable results & scale",
   ];
   return (
-    <div className=" shadow-lg border max-w-[819px] mx-auto text-center rounded-lg py-[30px] px-[50px] my-6">
+    <div className=" shadow-lg border max-w-[819px] mx-auto text-center rounded-lg py-[30px] px-[10px] sm:px-[50px] my-6">
       <p className="text-[18px] sm:text-[24px] text-[#e93d3d] text-center font-bold">
         Stop dabbling with ChatGPT!
       </p>
 
-      <h1 className="text-[24px] sm:text-[34px] text-center font-extrabold max-w-[90%] sm:max-w-[890px] mx-auto leading-normal sm:leading-[50px] tracking-tight sm:tracking-[-1px] uppercase">
+      <h1 className="text-[20px] sm:text-[34px] text-center font-extrabold max-w-[90%] sm:max-w-[890px] mx-auto leading-normal sm:leading-[50px] tracking-tight sm:tracking-[-1px] uppercase">
         Copy & paste <span className="underline">our proven prompts</span>, so
         you can save countless hours and scale with AI.
       </h1>
@@ -51,11 +51,11 @@ const StopDabbling = () => {
         <ul>
           {data.map((item) => (
             <div className="flex py-2">
-              <span className="text-[#e93d3d] text-[25px] sm:text-[30px] mr-2 font-bold">
+              <span className="text-[#e93d3d] text-[18px] sm:text-[30px] mr-2 font-bold">
                 {" "}
                 ✓{" "}
               </span>
-              <li className="text-[25px] sm:text-[30px] font-bold">{item}</li>
+              <li className="text-[18px] sm:text-[30px] font-bold">{item}</li>
             </div>
           ))}
         </ul>

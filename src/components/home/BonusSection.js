@@ -3,8 +3,8 @@ import Button from "./Button";
 
 const BonusSection = () => {
   return (
-    <div className=" shadow-lg border max-w-[819px] mx-auto text-center rounded-lg py-[50px] px-[50px] my-6">
-      <p className="text-center text-white text-4xl bg-[#e73904] font-bold leading-tight mb-6 px-4">
+    <div className=" shadow-lg border max-w-[819px] mx-auto text-center rounded-lg py-[50px] px-[15px] sm:px-[50px] my-6">
+      <p className="text-center text-white text-[16px] sm:text-4xl bg-[#e73904] font-bold leading-tight mb-6 px-4">
         INCLUDED WITH YOUR ORDER 👇
       </p>
 
@@ -14,12 +14,12 @@ const BonusSection = () => {
       />
 
       <div className="flex flex-col sm:flex-row py-2 ml-[40px] sm:ml-[40px]">
-        <span className="text-[#e93d3d] text-[20px] sm:text-[30px] mr-2 font-bold">
+        <span className="text-[#e93d3d] text-[20px] sm:text-[24px] sm:text-[30px] mr-2 font-bold">
           {" "}
           ✓{" "}
         </span>
         <ul>
-          <li className="text-[20px] sm:text-[30px] font-bold">
+          <li className="text-[20px] sm:text-[24px] sm:text-[30px] font-bold">
             16,000+ CHATGPT PROMPTS
           </li>
         </ul>
@@ -28,12 +28,12 @@ const BonusSection = () => {
         Get Expert-Crafted ChatGPT Prompts To Grow And Automate All Aspects of
         Your Business Online!
       </p>
-      <p className="text-center text-white text-[20px] sm:text-[30px] bg-[#e73904] font-bold mt-6 mb-3 uppercase">
+      <p className="text-center text-white text-[20px] sm:text-[24px] sm:text-[30px] bg-[#e73904] font-bold mt-6 mb-3 uppercase">
         <span className="underline"> free</span> fast action BONUSES
       </p>
 
       <div className="pb-[30px] border-b border-[#cbd5e0]">
-        <p className="text-center text-[#e73904] text-[30px] font-bold mb-6 uppercase">
+        <p className="text-center text-[#e73904] text-[24px] sm:text-[30px] font-bold mb-6 uppercase">
           BONUS #01
         </p>
         <img
@@ -41,11 +41,11 @@ const BonusSection = () => {
           alt=""
         />
         <div className=" py-2 mb-[20px] ">
-          <h1 className=" text-[30px] text-justify sm:max-w-[600px] tracking-[-1px] leading-[36px] mx-auto relative">
-            <span className=" font-bold text-before uppercase">
+          <h1 className=" text-[24px] sm:text-[30px] text-justify sm:max-w-[600px] tracking-[-1px] sm:leading-[36px] mx-auto relative">
+            <span className="text-[24px] sm:text-[28] font-bold text-before uppercase">
               The 'AI MONETIZATION' Blueprint: <br />
             </span>
-            <span className="text-[26px]">
+            <span className="text-[18px] sm:text-[26px]">
               <span className="italic">(Finally Revealed) </span> Discover the
               step-by-step ‘AI Monetization’ framework of how our coaches are{" "}
               <span className="font-bold underline">
@@ -61,7 +61,7 @@ const BonusSection = () => {
         ></img>
       </div>
       <div className="pb-[30px] border-b border-[#cbd5e0]">
-        <p className="text-center text-[#e73904] text-[30px] font-bold my-3 uppercase">
+        <p className="text-center text-[#e73904] text-[24px] sm:text-[30px] font-bold my-3 uppercase">
           BONUS #02
         </p>
         <img
@@ -70,11 +70,11 @@ const BonusSection = () => {
           alt=""
         />
         <div className=" py-2 mb-[20px] ">
-          <h1 className=" text-[30px] text-justify sm:max-w-[600px] tracking-[-1px] leading-[36px] mx-auto relative">
-            <span className=" font-bold text-before uppercase">
+          <h1 className=" text-[24px] sm:text-[30px] text-justify sm:max-w-[600px] tracking-[-1px] sm:leading-[36px] mx-auto relative">
+            <span className="text-[24px] sm:text-[28] font-bold text-before uppercase">
               Revolutionary 170+ AI Tools & Templates <br />
             </span>
-            <span className="text-[26px]">
+            <span className="text-[18px] sm:text-[26px]">
               Unlock the TRUE Power of A.I. and Done-For-You Templates that{" "}
               <b> do 90% of the work for you! </b>Whether you're looking to
               automate the tasks, create images 7 videos with AI, or simply make
@@ -89,7 +89,7 @@ const BonusSection = () => {
         ></img>
       </div>
       <div className="pb-[30px] border-b border-[#cbd5e0]">
-        <p className="text-center text-[#e73904] text-[30px] font-bold my-3 uppercase">
+        <p className="text-center text-[#e73904] text-[24px] sm:text-[30px] font-bold my-3 uppercase">
           BONUS #03
         </p>
         <img
@@ -98,11 +98,11 @@ const BonusSection = () => {
           alt=""
         />
         <div className=" py-2 mb-[20px] ">
-          <h1 className=" text-[30px] text-justify sm:max-w-[600px] tracking-[-1px] leading-[36px] mx-auto relative">
-            <span className=" font-bold text-before uppercase">
+          <h1 className=" text-[24px] sm:text-[30px] text-justify sm:max-w-[600px] tracking-[-1px] sm:leading-[36px] mx-auto relative">
+            <span className="text-[24px] sm:text-[28] font-bold text-before uppercase">
               369 SECRET PROMPTS TO EARNING $10,000+ MONTHLY <br />
             </span>
-            <span className="text-[26px]">
+            <span className="text-[18px] sm:text-[26px]">
               How this 30 online businesses used the ChatGPT Prompt™ to{" "}
               <b>earn over $10,000 monthly</b> (even at a beginner level!)
             </span>
@@ -114,7 +114,7 @@ const BonusSection = () => {
         ></img>
       </div>
       <div className="pb-[30px] border-b border-[#cbd5e0]">
-        <p className="text-center text-[#e73904] text-[30px] font-bold my-3 uppercase">
+        <p className="text-center text-[#e73904] text-[24px] sm:text-[30px] font-bold my-3 uppercase">
           BONUS #04
         </p>
         <img
@@ -123,11 +123,11 @@ const BonusSection = () => {
           alt=""
         />
         <div className=" py-2 mb-[20px] ">
-          <h1 className=" text-[30px] text-justify sm:max-w-[600px] tracking-[-1px] leading-[36px] mx-auto relative">
-            <span className=" font-bold text-before uppercase">
+          <h1 className=" text-[24px] sm:text-[30px] text-justify sm:max-w-[600px] tracking-[-1px] sm:leading-[36px] mx-auto relative">
+            <span className="text-[24px] sm:text-[28] font-bold text-before uppercase">
               A.I. HIGH TICKET CLOSING FRAMEWORK <br />
             </span>
-            <span className="text-[26px]">
+            <span className="text-[18px] sm:text-[26px]">
               Using our customized <span className="underline"> PROVEN </span>
               prompts, you can work just a few hours a day and{" "}
               <b>unlock a high income stream</b> while{" "}
@@ -143,7 +143,7 @@ const BonusSection = () => {
         ></img>
       </div>
       <div className="pb-[30px] border-b border-[#cbd5e0]">
-        <p className="text-center text-[#e73904] text-[30px] font-bold my-3 uppercase">
+        <p className="text-center text-[#e73904] text-[24px] sm:text-[30px] font-bold my-3 uppercase">
           BONUS #05
         </p>
         <img
@@ -152,12 +152,12 @@ const BonusSection = () => {
           alt=""
         />
         <div className=" py-2 mb-[20px] ">
-          <h1 className=" text-[30px] text-justify sm:max-w-[600px] tracking-[-1px] leading-[36px] mx-auto relative">
-            <span className=" font-bold text-before uppercase">
+          <h1 className=" text-[24px] sm:text-[30px] text-justify sm:max-w-[600px] tracking-[-1px] sm:leading-[36px] mx-auto relative">
+            <span className="text-[24px] sm:text-[28] font-bold text-before uppercase">
               ChatGPT Automatic Sales
               <br />
             </span>
-            <span className="text-[26px]">
+            <span className="text-[18px] sm:text-[26px]">
               Customize ChatGPT to your unique business needs with tailored,
               custom instructions that are optimized for your industry, products
               and services... allowing you to get optimized results and gain a
@@ -171,7 +171,7 @@ const BonusSection = () => {
         ></img>
       </div>
       <div className="pb-[30px] border-b border-[#cbd5e0]">
-        <p className="text-center text-[#e73904] text-[30px] font-bold my-3 uppercase">
+        <p className="text-center text-[#e73904] text-[24px] sm:text-[30px] font-bold my-3 uppercase">
           BONUS #06
         </p>
         <img
@@ -180,12 +180,12 @@ const BonusSection = () => {
           alt=""
         />
         <div className=" py-2 mb-[20px] ">
-          <h1 className=" text-[30px] text-justify sm:max-w-[600px] tracking-[-1px] leading-[36px] mx-auto relative">
-            <span className=" font-bold text-before uppercase">
+          <h1 className=" text-[24px] sm:text-[30px] text-justify sm:max-w-[600px] tracking-[-1px] sm:leading-[36px] mx-auto relative">
+            <span className="text-[24px] sm:text-[28] font-bold text-before uppercase">
               ChatGPT Plugins
               <br />
             </span>
-            <span className="text-[26px]">
+            <span className="text-[18px] sm:text-[26px]">
               Unlock even more possibilities with the best ChatGPT plugins and
               tools to streamline tasks and boost productivity.
             </span>
@@ -205,7 +205,7 @@ const BonusSection = () => {
       </div>
       {/* -------------- */}
 
-      <h1 className="text-[48px] font-bold">
+      <h1 className="text-[25px] sm:text-[48px] font-bold">
         Get <span className=" font-bold underline">Everything</span> For Just:{" "}
       </h1>
 
@@ -216,7 +216,7 @@ const BonusSection = () => {
 
       <Button></Button>
 
-      <p>Zero risk with our 60-day money-back guarantee</p>
+      <p className="text-[12px] sm:text-[20px]">Zero risk with our 60-day money-back guarantee</p>
       <img
         className="max-w-[200px] mx-auto"
         src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/HYXcsVKvx47tAl5wEEaq/media/64f2fbeff4a33ec146e057be.png"

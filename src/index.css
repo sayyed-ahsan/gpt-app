@@ -24,3 +24,553 @@ code {
 #payment-card {
   padding: '10px';
 }
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.number-felid {
+  width: 620px;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .number-felid {
+    width: 660px;
+  }
+}
+
+@media only screen and (max-width: 738px) {
+  .number-felid {
+    width: 655px;
+  }
+}
+
+@media only screen and (max-width: 735px) {
+  .number-felid {
+    width: 650px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .number-felid {
+    width: 645px;
+  }
+}
+
+@media only screen and (max-width: 725px) {
+  .number-felid {
+    width: 640px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .number-felid {
+    width: 635px;
+  }
+}
+
+@media only screen and (max-width: 715px) {
+  .number-felid {
+    width: 630px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .number-felid {
+    width: 625px;
+  }
+}
+
+@media only screen and (max-width: 705px) {
+  .number-felid {
+    width: 620px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .number-felid {
+    width: 615px;
+  }
+}
+
+@media only screen and (max-width: 695px) {
+  .number-felid {
+    width: 610px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .number-felid {
+    width: 625px;
+  }
+}
+
+@media only screen and (max-width: 705px) {
+  .number-felid {
+    width: 620px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .number-felid {
+    width: 615px;
+  }
+}
+
+@media only screen and (max-width: 695px) {
+  .number-felid {
+    width: 610px;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .number-felid {
+    width: 605px;
+  }
+}
+
+@media only screen and (max-width: 685px) {
+  .number-felid {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .number-felid {
+    width: 595px;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  .number-felid {
+    width: 590px;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .number-felid {
+    width: 585px;
+  }
+}
+
+@media only screen and (max-width: 665px) {
+  .number-felid {
+    width: 580px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .number-felid {
+    width: 575px;
+  }
+}
+
+@media only screen and (max-width: 655px) {
+  .number-felid {
+    width: 570px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .number-felid {
+    width: 565px;
+  }
+}
+
+@media only screen and (max-width: 645px) {
+  .number-felid {
+    width: 560px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .number-felid {
+    width: 555px;
+  }
+}
+
+@media only screen and (max-width: 635px) {
+  .number-felid {
+    width: 550px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .number-felid {
+    width: 545px;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  .number-felid {
+    width: 540px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .number-felid {
+    width: 535px;
+  }
+}
+
+@media only screen and (max-width: 615px) {
+  .number-felid {
+    width: 530px;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .number-felid {
+    width: 525px;
+  }
+}
+
+@media only screen and (max-width: 605px) {
+  .number-felid {
+    width: 520px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .number-felid {
+    width: 515px;
+  }
+}
+
+@media only screen and (max-width: 595px) {
+  .number-felid {
+    width: 510px;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .number-felid {
+    width: 505px;
+  }
+}
+
+@media only screen and (max-width: 585px) {
+  .number-felid {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .number-felid {
+    width: 495px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .number-felid {
+    width: 490px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .number-felid {
+    width: 485px;
+  }
+}
+
+@media only screen and (max-width: 565px) {
+  .number-felid {
+    width: 480px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .number-felid {
+    width: 475px;
+  }
+}
+
+@media only screen and (max-width: 555px) {
+  .number-felid {
+    width: 470px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .number-felid {
+    width: 465px;
+  }
+}
+
+@media only screen and (max-width: 545px) {
+  .number-felid {
+    width: 460px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .number-felid {
+    width: 455px;
+  }
+}
+
+@media only screen and (max-width: 535px) {
+  .number-felid {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .number-felid {
+    width: 445px;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .number-felid {
+    width: 440px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .number-felid {
+    width: 435px;
+  }
+}
+
+@media only screen and (max-width: 515px) {
+  .number-felid {
+    width: 430px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .number-felid {
+    width: 425px;
+  }
+}
+
+@media only screen and (max-width: 505px) {
+  .number-felid {
+    width: 420px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .number-felid {
+    width: 415px;
+  }
+}
+
+@media only screen and (max-width: 495px) {
+  .number-felid {
+    width: 410px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .number-felid {
+    width: 405px;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .number-felid {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .number-felid {
+    width: 395px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .number-felid {
+    width: 390px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .number-felid {
+    width: 385px;
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  .number-felid {
+    width: 380px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .number-felid {
+    width: 375px;
+  }
+}
+
+@media only screen and (max-width: 455px) {
+  .number-felid {
+    width: 370px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .number-felid {
+    width: 365px;
+  }
+}
+
+@media only screen and (max-width: 445px) {
+  .number-felid {
+    width: 360px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .number-felid {
+    width: 355px;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .number-felid {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .number-felid {
+    width: 345px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .number-felid {
+    width: 340px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .number-felid {
+    width: 335px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .number-felid {
+    width: 330px;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .number-felid {
+    width: 325px;
+  }
+}
+
+@media only screen and (max-width: 405px) {
+  .number-felid {
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .number-felid {
+    width: 315px;
+  }
+}
+
+@media only screen and (max-width: 395px) {
+  .number-felid {
+    width: 310px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .number-felid {
+    width: 305px;
+  }
+}
+
+@media only screen and (max-width: 385px) {
+  .number-felid {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .number-felid {
+    width: 295px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .number-felid {
+    width: 290px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .number-felid {
+    width: 285px;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .number-felid {
+    width: 280px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .number-felid {
+    width: 275px;
+  }
+}
+
+@media only screen and (max-width: 355px) {
+  .number-felid {
+    width: 270px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .number-felid {
+    width: 265px;
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .number-felid {
+    width: 260px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .number-felid {
+    width: 255px;
+  }
+}
+
+@media only screen and (max-width: 335px) {
+  .number-felid {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .number-felid {
+    width: 245px;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .number-felid {
+    width: 240px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .number-felid {
+    max-width: auto;
+  }
+}
