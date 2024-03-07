@@ -168,6 +168,7 @@ img {
   .number-felid {
     width: 585px;
   }
+
 }
 
 @media only screen and (max-width: 665px) {
@@ -182,7 +183,7 @@ img {
   }
 
   .video-container {
-    max-height: 230px;
+    max-height: 360px;
   }
 }
 
@@ -213,6 +214,10 @@ img {
 @media only screen and (max-width: 635px) {
   .number-felid {
     width: 550px;
+  }
+
+  .video-container {
+    max-height: 350px;
   }
 }
 
@@ -262,6 +267,10 @@ img {
   .number-felid {
     width: 510px;
   }
+
+  .video-container {
+    max-height: 310px;
+  }
 }
 
 @media only screen and (max-width: 590px) {
@@ -309,6 +318,10 @@ img {
 @media only screen and (max-width: 555px) {
   .number-felid {
     width: 470px;
+  }
+
+  .video-container {
+    max-height: 290px;
   }
 }
 
@@ -460,11 +473,19 @@ img {
   .number-felid {
     width: 345px;
   }
+
+  .video-container {
+    max-height: 210px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
   .number-felid {
     width: 340px;
+  }
+
+  .video-container {
+    max-height: 230px;
   }
 }
 
@@ -481,6 +502,10 @@ img {
 @media only screen and (max-width: 415px) {
   .number-felid {
     width: 330px;
+  }
+
+  .video-container {
+    max-height: 199px;
   }
 }
 
@@ -529,6 +554,10 @@ img {
 @media only screen and (max-width: 375px) {
   .number-felid {
     width: 290px;
+  }
+
+  .video-container {
+    max-height: 177px;
   }
 }
 

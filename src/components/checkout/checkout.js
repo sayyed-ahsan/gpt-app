@@ -30,29 +30,40 @@ const CheckoutForm = () => {
   });
   const [errors, setErrors] = useState({});
 
-  const [country, setCountry] = useState('');
-  function getCountryName(lat, lng) {
-    const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`;
-
-    fetch(url)
-      .then(response => response.json())
-      .then(data => {
-        setCountry(data.address.country); // This will log the country name
-      })
-      .catch(error => console.error('Error:', error));
-  }
-  useEffect(() => {
-    navigator.geolocation.getCurrentPosition(function (position) {
-      console.log("Latitude is :", position.coords.latitude);
-      getCountryName(position.coords.latitude, position.coords.longitude);
-    });
-  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
+  useEffect(() => {
+    // Make sure intlTelInput is available
+    if (window.intlTelInput && phoneInputRef.current) {
+      // Initialize intlTelInput
+      const iti = window.intlTelInput(phoneInputRef.current, {
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/utils.js" // Make sure to match the version and file with your source
+      });
+
+      // Once intlTelInput is initialized, set the initial country
+      iti.promise.then(() => {
+        const countryCode = iti.getSelectedCountryData().iso2;
+        iti.setCountry(countryCode);
+      });
+
+      // Listen for the country change event
+      const handleCountryChange = () => {
+        const countryCode = iti.getSelectedCountryData().iso2;
+        console.log("Selected country code:", countryCode);
+      };
+
+      phoneInputRef.current.addEventListener("countrychange", handleCountryChange);
+
+      // Cleanup on component unmount
+      return () => {
+        phoneInputRef.current.removeEventListener("countrychange", handleCountryChange);
+      };
+    }
+  }, []);
   const validateForm = () => {
     const newErrors = {};
     if (!formData.name) {
@@ -67,28 +78,6 @@ const CheckoutForm = () => {
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
-
-  useEffect(() => {
-    const phoneInput = phoneInputRef.current;
-
-    const iti = intlTelInput(phoneInput, {
-      utilsScript: utils,
-    });
-
-    iti.promise.then(() => {
-      const countryCode = iti.getSelectedCountryData().iso2;
-      iti.setCountry(countryCode);
-    });
-
-    phoneInput.addEventListener("countrychange", function () {
-      const countryCode = iti.getSelectedCountryData().iso2;
-      console.log("Selected country code:", countryCode);
-    });
-
-    return () => {
-      iti.destroy();
-    };
-  }, []);
 
   useEffect(() => {
     localStorage.clear();
@@ -219,10 +208,9 @@ const CheckoutForm = () => {
               placeholder="Email Address..."
             />
           </div>
-          <input
-            type="text"
-            name="number"
+          <input type="tel"
             ref={phoneInputRef}
+            name="number"
             value={formData.number}
             onChange={handleChange}
             className="block number-felid rounded-md border bg-background px-3 py-2 text-sm placeholder-text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#dadada] focus:border-[#dadada] disabled:opacity-50"
@@ -459,7 +447,7 @@ const CheckoutForm = () => {
             value={formData.county}
             onChange={handleChange}
           >
-            <option value="">{country ? country : 'Afghanistan'}</option>
+            <option value="">United Kingdom</option>
             <option value="Afghanistan">Afghanistan</option>
             <option value="Aland Islands">Aland Islands</option>
             <option value="Albania">Albania</option>
