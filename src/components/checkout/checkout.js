@@ -178,7 +178,8 @@ const CheckoutForm = () => {
   };
 
   return (
-    <div>
+    <div id="section1">
+
       <form
         className="max-w-[690px] mx-auto lg:max-w-full"
         onSubmit={handleSubmit}
@@ -270,7 +271,7 @@ const CheckoutForm = () => {
         </div>
         {/* -----3----- */}
         <div className="m-5">
-          <div className="bg-[#fefcbf] rounded-lg pt-6 border-2 border-dotted border-gray-400">
+          <div className="bg-[#fefcbf] rounded-lg pt-6 border-2 border-dashed border-gray-400">
             <div
               className="flex items-start mb-4"
               onClick={() => {
@@ -278,7 +279,7 @@ const CheckoutForm = () => {
               }}
             >
               <img
-                className="sm:ml-4"
+                className="w-[30px]"
                 src="data:image/webp;base64,UklGRsYBAABXRUJQVlA4WAoAAAASAAAAGwAAEAAAQU5JTQYAAAAAAAAAAABBTk1GsgAAAAAAAAAAABsAABAAAA4BAANWUDhMmgAAAC8bAAQQH8GgbSRHx59rL/8/ys/gmH/FbSQ19F8pvxwHBs1/FIG/ppDrB1yyELIAuslyFqb4AEKWNQHOIiSbiaij+ADg3QGyESEADttIUqQ+Zmaeu84/y/v/mY8gov8TgH+eYwt5et+AvCoLck3eJuoOgQWlcQzIPbMgJ4uz0Ls7D2pLBKAefnxejhyqQlJaF2pjCG3ZUuiX+BpBTk1GJgAAAAAAAAAAAAAAAAAAAOYAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcAQU5NRrIAAAAAAAAAAAAbAAAQAABGAAAAVlA4TJoAAAAvGwAEEB/BoG0kR8efay//P8rP4Jh/xW0kNfRfKb8cBwbNfxSBv6aQ6wdcshCyALrJcham+ABCljUBziIkm4moo/gA4N0BshEhAA7bSFKkPmZmnrvOP8v7/5mPIKL/E4B/nmMLeXrfgLwqC3JN3ibqDoEFpXEMyD2zICeLs9C7Ow9qSwSgHn58Xo4cqkJSWhdqYwht2VLol/ga"
                 alt=""
               />
