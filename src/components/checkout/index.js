@@ -18,7 +18,7 @@ const Checkout = () => {
           <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/3cfYZ62ndd3Fci44OcL9/media/65975f4dae13964ddf466f8a.jpeg" alt='' />
         </div>
         {/*--------- payment------------ */}
-        <div className=" shadow-lg border max-w-[693px] mx-auto text-center rounded-lg py-4 mt-5">
+        <div id="section1" className=" shadow-lg border max-w-[693px] mx-auto text-center rounded-lg py-4 mt-5">
           <Elements stripe={stripePromise}>
             <CheckoutForm />
           </Elements>{" "}
@@ -470,22 +470,23 @@ const Checkout = () => {
         </div>
 
         {/* -------------- */}
+        <a href="#section1" class="btn">
+          <div className="text-center px-4 py-8">
+            <h1 className="text-[20px] md:text-5xl lg:text-6xl font-bold leading-tight">
+              Get <span className="underline">Everything</span> For Just:
+              <br /> $27
+            </h1>
 
-        <div className="text-center px-4 py-8">
-          <h1 className="text-[20px] md:text-5xl lg:text-6xl font-bold leading-tight">
-            Get <span className="underline">Everything</span> For Just:
-            <br /> $27
-          </h1>
+            <button className="mt-6 font-bold text-white bg-[#e74c3c] text-[18px] md:text-3xl px-3 sm:px-10 py-4 rounded-md transition-all hover:bg-[#c0392b] cursor-pointer">
+              Get All Prompts + $1600 <br className="hidden md:inline" /> Toolkits
+              in Bonuses Today!
+            </button>
 
-          <button className="mt-6 font-bold text-white bg-[#e74c3c] text-[18px] md:text-3xl px-3 sm:px-10 py-4 rounded-md transition-all hover:bg-[#c0392b] cursor-pointer">
-            Get All Prompts + $1600 <br className="hidden md:inline" /> Toolkits
-            in Bonuses Today!
-          </button>
-
-          <p className="mt-4 text-[17px] sm:text-lg">
-            Zero risk with our 60-day money-back guarantee
-          </p>
-        </div>
+            <p className="mt-4 text-[17px] sm:text-lg">
+              Zero risk with our 60-day money-back guarantee
+            </p>
+          </div>
+        </a>
 
         {/* -------------- */}
       </div>
