@@ -178,7 +178,7 @@ const CheckoutForm = () => {
   };
 
   return (
-    <div id="section1">
+    <div>
 
       <form
         className="max-w-[690px] mx-auto lg:max-w-full"
@@ -264,35 +264,35 @@ const CheckoutForm = () => {
                 1
               </span>
               <span className="text-sm font-bold text-blue-600 text-[10px] sm:text-[13px]">
-                $27.00
+                $17.00
               </span>
             </div>
           </div>
         </div>
         {/* -----3----- */}
         <div className="m-5">
-          <div className="bg-[#fefcbf] rounded-lg pt-6 border-2 border-dashed border-gray-400">
+          <div className="bg-[#fefcbf] rounded-[3px]  border-2 border-dashed border-gray-400">
             <div
-              className="flex items-start mb-4"
+              className="px-4px py-4"
               onClick={() => {
-                amount === 39 ? setAmount(27) : setAmount(39);
+                amount === 39 ? setAmount(17) : setAmount(39);
               }}
             >
               <img
-                className="w-[30px]"
+                className="w-[25px] inline mr-2"
                 src="data:image/webp;base64,UklGRsYBAABXRUJQVlA4WAoAAAASAAAAGwAAEAAAQU5JTQYAAAAAAAAAAABBTk1GsgAAAAAAAAAAABsAABAAAA4BAANWUDhMmgAAAC8bAAQQH8GgbSRHx59rL/8/ys/gmH/FbSQ19F8pvxwHBs1/FIG/ppDrB1yyELIAuslyFqb4AEKWNQHOIiSbiaij+ADg3QGyESEADttIUqQ+Zmaeu84/y/v/mY8gov8TgH+eYwt5et+AvCoLck3eJuoOgQWlcQzIPbMgJ4uz0Ls7D2pLBKAefnxejhyqQlJaF2pjCG3ZUuiX+BpBTk1GJgAAAAAAAAAAAAAAAAAAAOYAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcAQU5NRrIAAAAAAAAAAAAbAAAQAABGAAAAVlA4TJoAAAAvGwAEEB/BoG0kR8efay//P8rP4Jh/xW0kNfRfKb8cBwbNfxSBv6aQ6wdcshCyALrJcham+ABCljUBziIkm4moo/gA4N0BshEhAA7bSFKkPmZmnrvOP8v7/5mPIKL/E4B/nmMLeXrfgLwqC3JN3ibqDoEFpXEMyD2zICeLs9C7Ow9qSwSgHn58Xo4cqkJSWhdqYwht2VLol/ga"
                 alt=""
               />
               <input type="checkbox" />
-              <span className="text-[#009900] text-[13px] sm:text-[16px] ml-1 mt-[-6px] font-bold">
+              <span className="text-[#009900] text-[13px] sm:text-[16px] ml-2 mt-[-6px] font-bold">
                 Add 967 'Personality Prompts' to Create 30 Days Of Amazing
                 Contents
               </span>
             </div>
             <div className="bg-[#fbf8e3] p-1 sm:p-3 border-[#ff9900]">
-              <p className="text-[13px] sm:text-[16px] mb-2">
-                <span className="underline text-[#ff0000] font-bold ">
-                  90% OFF (This page only) $12:
+              <p className="text-[13px] sm:text-[16px] mb-2 text-start">
+                <span className="underline text-[#cc3300] font-bold ">
+                  96% OFF (This page only) $22:
                 </span>{" "}
                 Start writing &amp; automating your content with the 30 Days Of
                 Content In 30 Minutes...(Normally $399) The only system built to
@@ -305,6 +305,7 @@ const CheckoutForm = () => {
         {/* ------4---- */}
         <div className="max-w-4xl mx-auto my-4 px-2 sm:px-8">
           <div className="text-[13px] font-bold pb-2">Order Summary</div>
+          <div className="border-b-[1px] border-[#cfd7df]"></div>
           <div className="relative w-full overflow-auto">
             <table className="w-full caption-bottom text-sm">
               <thead className="[&amp;_tr]:border-b">
@@ -322,14 +323,14 @@ const CheckoutForm = () => {
               </thead>
               <tbody className="[&amp;_tr:last-child]:border-0">
                 <tr className="transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
-                  <td className="py-4 align-center text-start  text-[11px] sm:text-[14px]">
+                  <td className="py-3 align-center text-start  text-[11px] sm:text-[14px]">
                     Ultimate ChatGPT Prompt Marketing Toolkits (Special Offer)
                   </td>
                   <td className="py-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-center text-[#297daf] font-bold">
                     1
                   </td>
                   <td className="py-4  align-middle [&amp;:has([role=checkbox])]:pr-0 text-right text-[#297daf] font-bold">
-                    $27.00
+                    $17.00
                   </td>
                 </tr>
 
@@ -344,7 +345,7 @@ const CheckoutForm = () => {
                         1
                       </td>
                       <td className="py-3 align-middle [&amp;:has([role=checkbox])]:pr-0 text-right text-[#297daf] font-bold">
-                        $12.00
+                        $22.00
                       </td>
                     </>
                   )}
