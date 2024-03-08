@@ -30,7 +30,6 @@ const CheckoutForm = () => {
   });
   const [errors, setErrors] = useState({});
 
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -41,7 +40,8 @@ const CheckoutForm = () => {
     if (window.intlTelInput && phoneInputRef.current) {
       // Initialize intlTelInput
       const iti = window.intlTelInput(phoneInputRef.current, {
-        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/utils.js" // Make sure to match the version and file with your source
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/utils.js", // Make sure to match the version and file with your source
       });
 
       // Once intlTelInput is initialized, set the initial country
@@ -56,11 +56,17 @@ const CheckoutForm = () => {
         console.log("Selected country code:", countryCode);
       };
 
-      phoneInputRef.current.addEventListener("countrychange", handleCountryChange);
+      phoneInputRef.current.addEventListener(
+        "countrychange",
+        handleCountryChange
+      );
 
       // Cleanup on component unmount
       return () => {
-        phoneInputRef.current.removeEventListener("countrychange", handleCountryChange);
+        phoneInputRef.current.removeEventListener(
+          "countrychange",
+          handleCountryChange
+        );
       };
     }
   }, []);
@@ -154,7 +160,7 @@ const CheckoutForm = () => {
   };
 
   const handleStripeSuccess = (result) => {
-    console.error(result, clientSecret, 'invalid service', paypalOptions);
+    console.error(result, clientSecret, "invalid service", paypalOptions);
     // Handle successful payment with Stripe
   };
 
@@ -179,7 +185,6 @@ const CheckoutForm = () => {
 
   return (
     <div>
-
       <form
         className="max-w-[690px] mx-auto lg:max-w-full"
         onSubmit={handleSubmit}
@@ -209,7 +214,8 @@ const CheckoutForm = () => {
               placeholder="Email Address..."
             />
           </div>
-          <input type="tel"
+          <input
+            type="tel"
             ref={phoneInputRef}
             name="number"
             value={formData.number}
@@ -271,9 +277,9 @@ const CheckoutForm = () => {
         </div>
         {/* -----3----- */}
         <div className="m-5">
-          <div className="bg-[#fefcbf] rounded-[3px]  border-2 border-dashed border-gray-400">
+          <div className="bg-[#fbf8e3] rounded-[3px]  border-2 border-dashed border-gray-400">
             <div
-              className="px-4px py-4"
+              className="px-4px py-4 bg-[#fefcbf] rounded m-2"
               onClick={() => {
                 amount === 39 ? setAmount(17) : setAmount(39);
               }}
@@ -398,11 +404,11 @@ const CheckoutForm = () => {
           <Elements stripe={stripePromise}>
             <button
               onClick={() => {
-                handleStripeSuccess("stripe result")
+                handleStripeSuccess("stripe result");
               }}
             >
               <img
-                className="px-2 sm:px-4 w-full sm:max-w-[400px]"
+                className="px-2 sm:px-4 w-full sm:max-w-[400px] opacity-50"
                 src="https://i.ibb.co/mXbfBWK/image.png"
                 alt="image"
               />
